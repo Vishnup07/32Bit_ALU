@@ -1,21 +1,12 @@
 # 32Bit_ALU Simulation
 
 # Aim: 
-
 Write a verilog code for 32 bit ALU supporting four logical and four arithmetic operations,use case statement and if statement for ALU behavioral modeling.
-
 To Verify the Functionality using Test Bench.
-
 # Tool Required:
-
 Functional Simulation: Incisive Simulator (ncvlog, ncelab, ncsim)
-
-## Design Information and Bock Diagram:
-
-The ALU will take in two 32-bit values, and control line. An Arithmetic unit does the following task like addition subtraction, multiplication and logical operations. As the input is given in 32 bit we get 32 bit output. The arithmetic will show only one output at a time so a selector is necessary to select one of the operator.
-
+## Design Information and Bock Diagram:.
 ![image](https://github.com/user-attachments/assets/e574788c-253f-46da-8468-298fe2844f7a)
-
 ### Fig 1 : Block Diagram of 32 Bit ALU 
 
 ## Creating a Work space :
@@ -72,12 +63,14 @@ or
 
 
 It will invoke the nclaunch window for functional simulation we can compile,elaborate and simulate it using Multiple Step .
+![Screenshot 2024-11-23 152451](https://github.com/user-attachments/assets/cec6669e-7ef5-464f-9c80-fce3de29009e)
 
 ### Fig 3: Setting Multi-step simulation
 
 Select Multiple Step and then select “Create cds.lib File” as shown in below figure 
 
 Click the cds.lib file and save the file by clicking on Save option 
+![Screenshot 2024-11-23 152500](https://github.com/user-attachments/assets/7c26c16f-4e15-49f7-9de3-f01fb87a835e)
 
 ### Fig 4:cds.lib file Creation
 
@@ -88,9 +81,7 @@ Select “Don’t include any libraries (verilog design)” from “New cds.lib 
 We are simulating verilog design without using any libraries 
 
 A Click “OK” in the “nclaunch: Open Design Directory” window as shown in below figure 
-
 ![image](https://github.com/user-attachments/assets/d5202b97-ee5c-4e0e-9eaf-5f3fa733e546)
-
 ### Fig 5: Selection of Don’t include any libraries
 
 A ‘NCLaunch window’ appears as shown in figure below
@@ -100,6 +91,7 @@ Left side you can see the HDL files. Right side of the window has worklib and sn
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation .
 
 To perform the function simulation, the following three steps are involved Compilation, Elaboration and Simulation. 
+![Screenshot 2024-11-23 152526](https://github.com/user-attachments/assets/1f2d2efe-53c7-4e42-9fc3-337408ef4f60)
 
 ### Fig 6: Nclaunch Window
 
@@ -124,6 +116,7 @@ i.e Cadence IES command for compile: ncverilog +access+rwc -compile fa.v
 Left side select the file and in Tools : launch verilog compiler with current selection will get enable. Click it to compile the code 
 
 Worklib is the directory where all the compiled codes are stored while Snapshot will have output of elaboration which in turn goes for simulation 
+![Screenshot 2024-11-23 152535](https://github.com/user-attachments/assets/d7e62545-2071-4334-9cf4-1c198108dfea)
 
 ### Fig 7: Compiled database in worklib
 
@@ -158,6 +151,7 @@ Outputs: Elaborate database updated in mapped library if successful, generates r
 5.It also establishes net connectivity and prepares all of this for simulation
 
 After elaboration the file will come under snapshot. Select the test bench and simulate it.
+![Screenshot 2024-11-23 152543](https://github.com/user-attachments/assets/affeed08-416f-4aed-94fc-5f41ed45fd69)
 
 ## Fig 8: Elaboration Launch Option
 
@@ -172,12 +166,14 @@ Outputs: Simulation log file, waveforms for debugging
 Simulation allow to dump design and test bench signals into a waveform 
 
 Steps for simulation – Run the simulation command with simulator options
+![Screenshot 2024-11-23 152557](https://github.com/user-attachments/assets/98060fd3-a471-4c14-aa0a-1fa49a360b5b)
 
 ## Fig 9: Design Browser window for simulation
+![Screenshot 2024-11-23 154922](https://github.com/user-attachments/assets/d10b4824-be4d-48dc-8d54-6193ab73ad47)
+
 
 ## Fig 10:Simulation Waveform Window
 
-## Fig 11:Simulation Waveform Window
 
 ### Result
 
